@@ -1,0 +1,3 @@
+[submodule "lua_cmake"]
+	path = lua_cmake
+	url = https://github.com/dantros/lua_cmake.git
