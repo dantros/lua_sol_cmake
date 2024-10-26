@@ -15,10 +15,10 @@ target_include_directories(lua_sol PRIVATE ${LUA_SOL_HEADERS})
 target_link_libraries(lua_sol PRIVATE lua_static)
 
 # Lua was built with C++
-target_compile_definitions(lua_sol PRIVATE SOL_USING_CXX_LUA)
+target_compile_definitions(lua_sol PUBLIC SOL_USING_CXX_LUA)
 
 # Enabling sol safeties
-target_compile_definitions(lua_sol PRIVATE SOL_ALL_SAFETIES_ON)
+target_compile_definitions(lua_sol PUBLIC SOL_ALL_SAFETIES_ON)
 
 # Making LUA_SOL_INCLUDE available to users of this lib
 get_directory_property(hasParent PARENT_DIRECTORY)
