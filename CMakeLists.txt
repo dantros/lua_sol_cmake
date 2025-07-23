@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.30)
 
 project(lua_sol_cmake_sln CXX)
 
+option(LUA_CMAKE_BUILD_STATIC_LIB "" TRUE)
+option(LUA_CMAKE_BUILD_INTERPRETER "" FALSE)
+option(LUA_CMAKE_BUILD_COMPILER "" FALSE)
 add_subdirectory("lua_cmake")
 
 set(LUA_SOL_HEADERS
